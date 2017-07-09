@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1250C0EB9F1D5D6CF22DCD19 /* Pods_Crash_DummiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F8DACE0FB6DE9E619F7885 /* Pods_Crash_DummiTests.framework */; };
+		8FA53E619A3CEDDF255DC5B2 /* Pods_Crash_Dummi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB4BB11834B58F277FC8D81 /* Pods_Crash_Dummi.framework */; };
+		C79F3A491F119EC300C1DEB8 /* ViewControllerBike.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F3A481F119EC300C1DEB8 /* ViewControllerBike.swift */; };
+		C79F3A4B1F119F0700C1DEB8 /* ViewControllerCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F3A4A1F119F0700C1DEB8 /* ViewControllerCar.swift */; };
+		C79F3A4D1F11AF9D00C1DEB8 /* locationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F3A4C1F11AF9D00C1DEB8 /* locationManager.swift */; };
 		C7E2A9871F1185AB00B1CCD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E2A9861F1185AB00B1CCD5 /* AppDelegate.swift */; };
 		C7E2A9891F1185AB00B1CCD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E2A9881F1185AB00B1CCD5 /* ViewController.swift */; };
 		C7E2A98C1F1185AB00B1CCD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E2A98A1F1185AB00B1CCD5 /* Main.storyboard */; };
@@ -14,6 +19,7 @@
 		C7E2A9911F1185AB00B1CCD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E2A98F1F1185AB00B1CCD5 /* LaunchScreen.storyboard */; };
 		C7E2A99C1F1185AB00B1CCD5 /* Crash_DummiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E2A99B1F1185AB00B1CCD5 /* Crash_DummiTests.swift */; };
 		C7E2A9A71F1185AB00B1CCD5 /* Crash_DummiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E2A9A61F1185AB00B1CCD5 /* Crash_DummiUITests.swift */; };
+		D0F7DC879BE4FE0DEEC335F5 /* Pods_Crash_DummiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840CE33591D940ACD283C397 /* Pods_Crash_DummiUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15BFD949B240904B15558B0D /* Pods-Crash DummiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crash DummiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crash DummiUITests/Pods-Crash DummiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2A66215DC76815A11FC78784 /* Pods-Crash DummiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crash DummiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crash DummiUITests/Pods-Crash DummiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		480B7DD2B790F3938D878630 /* Pods-Crash DummiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crash DummiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crash DummiTests/Pods-Crash DummiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4ED3E0F31903213C5DED6539 /* Pods-Crash Dummi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crash Dummi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crash Dummi/Pods-Crash Dummi.debug.xcconfig"; sourceTree = "<group>"; };
+		565706F7C8D6417B438A03A4 /* Pods-Crash DummiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crash DummiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crash DummiTests/Pods-Crash DummiTests.release.xcconfig"; sourceTree = "<group>"; };
+		840CE33591D940ACD283C397 /* Pods_Crash_DummiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crash_DummiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CB4BB11834B58F277FC8D81 /* Pods_Crash_Dummi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crash_Dummi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0C9E2963D144EDD3374954E /* Pods-Crash Dummi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crash Dummi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crash Dummi/Pods-Crash Dummi.release.xcconfig"; sourceTree = "<group>"; };
+		C79F3A481F119EC300C1DEB8 /* ViewControllerBike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerBike.swift; sourceTree = "<group>"; };
+		C79F3A4A1F119F0700C1DEB8 /* ViewControllerCar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerCar.swift; sourceTree = "<group>"; };
+		C79F3A4C1F11AF9D00C1DEB8 /* locationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locationManager.swift; sourceTree = "<group>"; };
 		C7E2A9831F1185AB00B1CCD5 /* Crash Dummi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crash Dummi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E2A9861F1185AB00B1CCD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7E2A9881F1185AB00B1CCD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +64,7 @@
 		C7E2A9A21F1185AB00B1CCD5 /* Crash DummiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crash DummiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E2A9A61F1185AB00B1CCD5 /* Crash_DummiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crash_DummiUITests.swift; sourceTree = "<group>"; };
 		C7E2A9A81F1185AB00B1CCD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6F8DACE0FB6DE9E619F7885 /* Pods_Crash_DummiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crash_DummiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FA53E619A3CEDDF255DC5B2 /* Pods_Crash_Dummi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1250C0EB9F1D5D6CF22DCD19 /* Pods_Crash_DummiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +88,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0F7DC879BE4FE0DEEC335F5 /* Pods_Crash_DummiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E029965788F0022E85C415E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CB4BB11834B58F277FC8D81 /* Pods_Crash_Dummi.framework */,
+				E6F8DACE0FB6DE9E619F7885 /* Pods_Crash_DummiTests.framework */,
+				840CE33591D940ACD283C397 /* Pods_Crash_DummiUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		731F5641F100516DC9F9963D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4ED3E0F31903213C5DED6539 /* Pods-Crash Dummi.debug.xcconfig */,
+				C0C9E2963D144EDD3374954E /* Pods-Crash Dummi.release.xcconfig */,
+				480B7DD2B790F3938D878630 /* Pods-Crash DummiTests.debug.xcconfig */,
+				565706F7C8D6417B438A03A4 /* Pods-Crash DummiTests.release.xcconfig */,
+				2A66215DC76815A11FC78784 /* Pods-Crash DummiUITests.debug.xcconfig */,
+				15BFD949B240904B15558B0D /* Pods-Crash DummiUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C7E2A97A1F1185AB00B1CCD5 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +125,8 @@
 				C7E2A99A1F1185AB00B1CCD5 /* Crash DummiTests */,
 				C7E2A9A51F1185AB00B1CCD5 /* Crash DummiUITests */,
 				C7E2A9841F1185AB00B1CCD5 /* Products */,
+				731F5641F100516DC9F9963D /* Pods */,
+				1E029965788F0022E85C415E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +145,13 @@
 			children = (
 				C7E2A9861F1185AB00B1CCD5 /* AppDelegate.swift */,
 				C7E2A9881F1185AB00B1CCD5 /* ViewController.swift */,
+				C79F3A481F119EC300C1DEB8 /* ViewControllerBike.swift */,
+				C79F3A4A1F119F0700C1DEB8 /* ViewControllerCar.swift */,
 				C7E2A98A1F1185AB00B1CCD5 /* Main.storyboard */,
 				C7E2A98D1F1185AB00B1CCD5 /* Assets.xcassets */,
 				C7E2A98F1F1185AB00B1CCD5 /* LaunchScreen.storyboard */,
 				C7E2A9921F1185AB00B1CCD5 /* Info.plist */,
+				C79F3A4C1F11AF9D00C1DEB8 /* locationManager.swift */,
 			);
 			path = "Crash Dummi";
 			sourceTree = "<group>";
@@ -132,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7E2A9AB1F1185AB00B1CCD5 /* Build configuration list for PBXNativeTarget "Crash Dummi" */;
 			buildPhases = (
+				ACCBF7FD6F03432C77B8569C /* [CP] Check Pods Manifest.lock */,
 				C7E2A97F1F1185AB00B1CCD5 /* Sources */,
 				C7E2A9801F1185AB00B1CCD5 /* Frameworks */,
 				C7E2A9811F1185AB00B1CCD5 /* Resources */,
+				061B25C0987EB61F99E00F5F /* [CP] Embed Pods Frameworks */,
+				F51D0BA05D3969658B7938AC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7E2A9AE1F1185AB00B1CCD5 /* Build configuration list for PBXNativeTarget "Crash DummiTests" */;
 			buildPhases = (
+				D1BE0EB8B36676FA3EC9FC77 /* [CP] Check Pods Manifest.lock */,
 				C7E2A9931F1185AB00B1CCD5 /* Sources */,
 				C7E2A9941F1185AB00B1CCD5 /* Frameworks */,
 				C7E2A9951F1185AB00B1CCD5 /* Resources */,
+				097BB0C5C8EAB2DD776AEDED /* [CP] Embed Pods Frameworks */,
+				C90488BA5E76BB7B09E6CC49 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7E2A9B11F1185AB00B1CCD5 /* Build configuration list for PBXNativeTarget "Crash DummiUITests" */;
 			buildPhases = (
+				07E2AE66E3698D8A6B34FB0C /* [CP] Check Pods Manifest.lock */,
 				C7E2A99E1F1185AB00B1CCD5 /* Sources */,
 				C7E2A99F1F1185AB00B1CCD5 /* Frameworks */,
 				C7E2A9A01F1185AB00B1CCD5 /* Resources */,
+				95D2A0FE094D9F7B8813B168 /* [CP] Embed Pods Frameworks */,
+				9C9ABF445E1F748962DBA8C4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,13 +315,154 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		061B25C0987EB61F99E00F5F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crash Dummi/Pods-Crash Dummi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		07E2AE66E3698D8A6B34FB0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		097BB0C5C8EAB2DD776AEDED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crash DummiTests/Pods-Crash DummiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95D2A0FE094D9F7B8813B168 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crash DummiUITests/Pods-Crash DummiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C9ABF445E1F748962DBA8C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crash DummiUITests/Pods-Crash DummiUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACCBF7FD6F03432C77B8569C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C90488BA5E76BB7B09E6CC49 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crash DummiTests/Pods-Crash DummiTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1BE0EB8B36676FA3EC9FC77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F51D0BA05D3969658B7938AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crash Dummi/Pods-Crash Dummi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C7E2A97F1F1185AB00B1CCD5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C79F3A4D1F11AF9D00C1DEB8 /* locationManager.swift in Sources */,
 				C7E2A9891F1185AB00B1CCD5 /* ViewController.swift in Sources */,
 				C7E2A9871F1185AB00B1CCD5 /* AppDelegate.swift in Sources */,
+				C79F3A491F119EC300C1DEB8 /* ViewControllerBike.swift in Sources */,
+				C79F3A4B1F119F0700C1DEB8 /* ViewControllerCar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +612,7 @@
 		};
 		C7E2A9AC1F1185AB00B1CCD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ED3E0F31903213C5DED6539 /* Pods-Crash Dummi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9VB87X296R;
@@ -426,6 +626,7 @@
 		};
 		C7E2A9AD1F1185AB00B1CCD5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0C9E2963D144EDD3374954E /* Pods-Crash Dummi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9VB87X296R;
@@ -439,6 +640,7 @@
 		};
 		C7E2A9AF1F1185AB00B1CCD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 480B7DD2B790F3938D878630 /* Pods-Crash DummiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +656,7 @@
 		};
 		C7E2A9B01F1185AB00B1CCD5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 565706F7C8D6417B438A03A4 /* Pods-Crash DummiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +672,7 @@
 		};
 		C7E2A9B21F1185AB00B1CCD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A66215DC76815A11FC78784 /* Pods-Crash DummiUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 9VB87X296R;
@@ -483,6 +687,7 @@
 		};
 		C7E2A9B31F1185AB00B1CCD5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15BFD949B240904B15558B0D /* Pods-Crash DummiUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 9VB87X296R;
@@ -514,6 +719,7 @@
 				C7E2A9AD1F1185AB00B1CCD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7E2A9AE1F1185AB00B1CCD5 /* Build configuration list for PBXNativeTarget "Crash DummiTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +728,7 @@
 				C7E2A9B01F1185AB00B1CCD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7E2A9B11F1185AB00B1CCD5 /* Build configuration list for PBXNativeTarget "Crash DummiUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +737,7 @@
 				C7E2A9B31F1185AB00B1CCD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

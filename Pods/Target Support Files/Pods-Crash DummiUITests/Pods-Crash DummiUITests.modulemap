@@ -1,0 +1,6 @@
+framework module Pods_Crash_DummiUITests {
+  umbrella header "Pods-Crash DummiUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

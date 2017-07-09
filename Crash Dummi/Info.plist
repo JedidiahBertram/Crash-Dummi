@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Crash Dummi requires your location to help other users avoid hitting you.</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1IjoiamVkaWRpYWgtYmVydHJhbSIsImEiOiJjajR0ZTZ4ajgwMXF6MndwMjJ4ZWM3ajc3In0.2EBsGuvJb3shRVJds3wFJg</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
