@@ -34,6 +34,11 @@ class ViewControllerBike: UIViewController, CLLocationManagerDelegate, MGLMapVie
         // Always try to show a callout when an annotation is tapped.
         return true
     }
+    
+    func mapViewDidFinishLoadingMap(_ mapView: MGLMapView) {
+        mapView.setCenter((mapView.userLocation?.coordinate)!, animated: false)
+        mapView.userTrackingMode = .follow
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

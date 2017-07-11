@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import PubNub
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, PNObjectEventListener{
 
     var window: UIWindow?
 

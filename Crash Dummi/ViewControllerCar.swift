@@ -7,15 +7,17 @@
 //
 
 import UIKit
+import CoreLocation
 import Mapbox
 
-class ViewControllerCar: UIViewController, MGLMapViewDelegate {
+class ViewControllerCar: UIViewController, CLLocationManagerDelegate, MGLMapViewDelegate {
     @IBOutlet weak var mapView: MGLMapView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        CDLocationManager.shared.startLocationUpdates()
         
         mapView.delegate = self
 
@@ -26,11 +28,18 @@ class ViewControllerCar: UIViewController, MGLMapViewDelegate {
         
         mapView.addAnnotation(point)
         // Do any additional setup after loading the view.
+  
+//        mapView.setCenterCoordinate(centerCoordinate: point.coordinate, zoomLevel: 14, animated: NO)
     }
     
     func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
         // Always try to show a callout when an annotation is tapped.
         return true
+    }
+    
+    func mapViewDidFinishLoadingMap(_ mapView: MGLMapView) {
+        mapView.setCenter((mapView.userLocation?.coordinate)!, animated: false)
+        mapView.userTrackingMode = .follow
     }
 
     override func didReceiveMemoryWarning() {
