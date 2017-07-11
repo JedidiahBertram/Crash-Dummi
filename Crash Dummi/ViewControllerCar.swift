@@ -32,6 +32,11 @@ class ViewControllerCar: UIViewController, CLLocationManagerDelegate, MGLMapView
 //        mapView.setCenterCoordinate(centerCoordinate: point.coordinate, zoomLevel: 14, animated: NO)
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        CDLocationManager.shared.stopLocationUpdates()
+    }
+    
     func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
         // Always try to show a callout when an annotation is tapped.
         return true

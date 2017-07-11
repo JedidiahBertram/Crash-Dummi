@@ -30,6 +30,11 @@ class ViewControllerBike: UIViewController, CLLocationManagerDelegate, MGLMapVie
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        CDLocationManager.shared.stopLocationUpdates()
+    }
+    
     func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
         // Always try to show a callout when an annotation is tapped.
         return true
@@ -39,7 +44,7 @@ class ViewControllerBike: UIViewController, CLLocationManagerDelegate, MGLMapVie
         mapView.setCenter((mapView.userLocation?.coordinate)!, animated: false)
         mapView.userTrackingMode = .follow
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
