@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PubNub.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -27,7 +32,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1CBAF65BBF4E7833EF22DE52CB57AE4F</key>
+		<key>B2D94CF803B3F6438A2B09219FFECEDD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D7A06866235744C7C492685D0127D924</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,12 +1,17 @@
 PODS:
   - Mapbox-iOS-SDK (3.6.0)
+  - PubNub (4.6.1):
+    - PubNub/Core (= 4.6.1)
+  - PubNub/Core (4.6.1)
 
 DEPENDENCIES:
   - Mapbox-iOS-SDK (~> 3.6)
+  - PubNub (~> 4)
 
 SPEC CHECKSUMS:
   Mapbox-iOS-SDK: c911b1875a00f12bb74253b763ac483425bd4225
+  PubNub: 408ba6402a9c712418da738adda12ccc339cbb1e
 
-PODFILE CHECKSUM: 87a1101ce497bf3ba8e8d817424a336a8d6653e4
+PODFILE CHECKSUM: d4782786b78fda06fdcba7f837bc3a55686f7aa5
 
 COCOAPODS: 1.2.1

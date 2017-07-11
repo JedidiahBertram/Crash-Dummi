@@ -7,6 +7,7 @@ target 'Crash Dummi' do
 
   # Pods for Crash Dummi
    pod 'Mapbox-iOS-SDK', '~> 3.6'
+   pod "PubNub", "~> 4"
   target 'Crash DummiTests' do
     inherit! :search_paths
     # Pods for testing
