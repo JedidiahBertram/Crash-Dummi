@@ -47,8 +47,8 @@ class CDLocationManager: NSObject {
 extension CDLocationManager: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         // add logic here
-        if let location = locations.last {
-            print(location)
+        if let currentLocation = locations.last {
+            print(currentLocation)
         } else {
             print("No locations yet")
         }
