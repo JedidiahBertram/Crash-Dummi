@@ -10,23 +10,20 @@ import UIKit
 import CoreLocation
 import Mapbox
 
-class ViewControllerBike: UIViewController, CLLocationManagerDelegate, MGLMapViewDelegate {
+
+class ViewControllerBike: UIViewController, CLLocationManagerDelegate,  MGLMapViewDelegate {
+
 
     @IBOutlet weak var mapView: MGLMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         
         CDLocationManager.shared.startLocationUpdates()
 
         mapView.delegate = self
         
-         let point = MGLPointAnnotation()
-        point.coordinate = CLLocationCoordinate2D(latitude: 30.2747, longitude: -97.7404)
-        point.title = "Texas State Capitol Building"
-        point.subtitle = "Former work place of George W. Bush"
-        
-        mapView.addAnnotation(point)
         // Do any additional setup after loading the view.
     }
     

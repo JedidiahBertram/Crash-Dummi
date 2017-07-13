@@ -20,13 +20,7 @@ class ViewControllerCar: UIViewController, CLLocationManagerDelegate, MGLMapView
         CDLocationManager.shared.startLocationUpdates()
         
         mapView.delegate = self
-
-        let point = MGLPointAnnotation()
-        point.coordinate = CLLocationCoordinate2D(latitude: 32.7072, longitude: -117.1571)
-        point.title = "Petco Park"
-        point.subtitle = "Home of the San Diego Padres"
         
-        mapView.addAnnotation(point)
         // Do any additional setup after loading the view.
   
 //        mapView.setCenterCoordinate(centerCoordinate: point.coordinate, zoomLevel: 14, animated: NO)

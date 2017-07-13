@@ -19,6 +19,7 @@
 		C7E2A9911F1185AB00B1CCD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E2A98F1F1185AB00B1CCD5 /* LaunchScreen.storyboard */; };
 		C7E2A99C1F1185AB00B1CCD5 /* Crash_DummiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E2A99B1F1185AB00B1CCD5 /* Crash_DummiTests.swift */; };
 		C7E2A9A71F1185AB00B1CCD5 /* Crash_DummiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E2A9A61F1185AB00B1CCD5 /* Crash_DummiUITests.swift */; };
+		C7E4E4651F17F11F0016BF8A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7E4E4641F17F11F0016BF8A /* GoogleService-Info.plist */; };
 		D0F7DC879BE4FE0DEEC335F5 /* Pods_Crash_DummiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840CE33591D940ACD283C397 /* Pods_Crash_DummiUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		C7E2A9A21F1185AB00B1CCD5 /* Crash DummiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crash DummiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E2A9A61F1185AB00B1CCD5 /* Crash_DummiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crash_DummiUITests.swift; sourceTree = "<group>"; };
 		C7E2A9A81F1185AB00B1CCD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7E4E4641F17F11F0016BF8A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E6F8DACE0FB6DE9E619F7885 /* Pods_Crash_DummiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crash_DummiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -143,6 +145,7 @@
 		C7E2A9851F1185AB00B1CCD5 /* Crash Dummi */ = {
 			isa = PBXGroup;
 			children = (
+				C7E4E4641F17F11F0016BF8A /* GoogleService-Info.plist */,
 				C7E2A9861F1185AB00B1CCD5 /* AppDelegate.swift */,
 				C7E2A9881F1185AB00B1CCD5 /* ViewController.swift */,
 				C79F3A481F119EC300C1DEB8 /* ViewControllerBike.swift */,
@@ -294,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7E2A9911F1185AB00B1CCD5 /* LaunchScreen.storyboard in Resources */,
+				C7E4E4651F17F11F0016BF8A /* GoogleService-Info.plist in Resources */,
 				C7E2A98E1F1185AB00B1CCD5 /* Assets.xcassets in Resources */,
 				C7E2A98C1F1185AB00B1CCD5 /* Main.storyboard in Resources */,
 			);

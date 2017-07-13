@@ -1,17 +1,32 @@
 PODS:
+  - Firebase/Core (4.0.3):
+    - FirebaseAnalytics (= 4.0.2)
+    - FirebaseCore (= 4.0.3)
+  - FirebaseAnalytics (4.0.2):
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseCore (4.0.3):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseInstanceID (2.0.0):
+    - FirebaseCore (~> 4.0)
+  - GoogleToolboxForMac/Defines (2.1.1)
+  - GoogleToolboxForMac/NSData+zlib (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
   - Mapbox-iOS-SDK (3.6.0)
-  - PubNub (4.6.1):
-    - PubNub/Core (= 4.6.1)
-  - PubNub/Core (4.6.1)
 
 DEPENDENCIES:
+  - Firebase/Core
   - Mapbox-iOS-SDK (~> 3.6)
-  - PubNub (~> 4)
 
 SPEC CHECKSUMS:
+  Firebase: 9e33fdfbca37cab635c693883caa90a4475b842b
+  FirebaseAnalytics: ad41720e3e67fc63fbe3d2948d3e26932a8de311
+  FirebaseCore: c709067051de07bdaffdc4e735cd7299a23c463a
+  FirebaseInstanceID: 9fbf536668f4d3f0880e7438456dabd1376e294b
+  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   Mapbox-iOS-SDK: c911b1875a00f12bb74253b763ac483425bd4225
-  PubNub: 408ba6402a9c712418da738adda12ccc339cbb1e
 
-PODFILE CHECKSUM: d4782786b78fda06fdcba7f837bc3a55686f7aa5
+PODFILE CHECKSUM: 61178aa0c910a7a1ba36d7a2d887f3112bc6d737
 
 COCOAPODS: 1.2.1
