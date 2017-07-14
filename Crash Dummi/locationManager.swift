@@ -8,10 +8,14 @@
 
 import UIKit
 import CoreLocation
+import Firebase
+import FirebaseDatabase
 
 class CDLocationManager: NSObject {
 
     //MARK: - Properties
+    
+    let rootRef = Database.database().reference()
     
     static var shared: CDLocationManager = CDLocationManager()
     
@@ -30,12 +34,19 @@ class CDLocationManager: NSObject {
         locationManager.distanceFilter = 15
         locationManager.delegate = self
         
+     let rootRef = Database.database().reference()
+        self.rootRef.child("userLocation").setValue("Coordinate")
+        
+        print("ROOOOT REF")
+        print(rootRef)
+        
     }
     
     // MARK: - Methods
     
     func startLocationUpdates() {
         locationManager.startUpdatingLocation()
+        
     }
     
     func stopLocationUpdates() {
@@ -45,10 +56,13 @@ class CDLocationManager: NSObject {
 }
 
 extension CDLocationManager: CLLocationManagerDelegate {
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations
+        locations: [CLLocation]){
         // add logic here
         if let currentLocation = locations.last {
             print(currentLocation)
+            let dict: [String: Any] = ["latitude": currentLocation.coordinate.latitude, "longitude": currentLocation.coordinate.longitude]
+         self.rootRef.child("userLocation").setValue(dict)
         } else {
             print("No locations yet")
         }

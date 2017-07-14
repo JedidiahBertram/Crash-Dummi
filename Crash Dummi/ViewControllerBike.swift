@@ -9,10 +9,10 @@
 import UIKit
 import CoreLocation
 import Mapbox
+import Firebase
 
 
 class ViewControllerBike: UIViewController, CLLocationManagerDelegate,  MGLMapViewDelegate {
-
 
     @IBOutlet weak var mapView: MGLMapView!
     
@@ -21,7 +21,7 @@ class ViewControllerBike: UIViewController, CLLocationManagerDelegate,  MGLMapVi
     
         
         CDLocationManager.shared.startLocationUpdates()
-
+        
         mapView.delegate = self
         
         // Do any additional setup after loading the view.
