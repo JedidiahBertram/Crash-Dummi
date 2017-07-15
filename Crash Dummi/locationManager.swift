@@ -34,11 +34,11 @@ class CDLocationManager: NSObject {
         locationManager.distanceFilter = 15
         locationManager.delegate = self
         
-     let rootRef = Database.database().reference()
-        self.rootRef.child("userLocation").setValue("Coordinate")
-        
-        print("ROOOOT REF")
-        print(rootRef)
+//     let rootRef = Database.database().reference()
+//        self.rootRef.child("userLocation").setValue("Coordinate")
+//        
+//        print("ROOOOT REF")
+//        print(rootRef)
         
     }
     
@@ -55,6 +55,7 @@ class CDLocationManager: NSObject {
 
 }
 
+ let userId = arc4random()
 extension CDLocationManager: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations
         locations: [CLLocation]){
@@ -62,7 +63,7 @@ extension CDLocationManager: CLLocationManagerDelegate {
         if let currentLocation = locations.last {
             print(currentLocation)
             let dict: [String: Any] = ["latitude": currentLocation.coordinate.latitude, "longitude": currentLocation.coordinate.longitude]
-         self.rootRef.child("userLocation").setValue(dict)
+         self.rootRef.child("users/\(userId)/coords").setValue(dict)
         } else {
             print("No locations yet")
         }
