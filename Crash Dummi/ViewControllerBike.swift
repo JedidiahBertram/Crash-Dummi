@@ -10,6 +10,7 @@ import UIKit
 import CoreLocation
 import Mapbox
 import Firebase
+import FirebaseDatabase
 
 
 class ViewControllerBike: UIViewController, CLLocationManagerDelegate,  MGLMapViewDelegate {
@@ -18,7 +19,7 @@ class ViewControllerBike: UIViewController, CLLocationManagerDelegate,  MGLMapVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         
         CDLocationManager.shared.startLocationUpdates()
         

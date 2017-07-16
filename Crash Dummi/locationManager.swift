@@ -30,7 +30,7 @@ class CDLocationManager: NSObject {
             //add logic here
         }
         
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         locationManager.distanceFilter = 15
         locationManager.delegate = self
         
@@ -55,7 +55,7 @@ class CDLocationManager: NSObject {
 
 }
 
- let userId = arc4random()
+let userId = arc4random()
 extension CDLocationManager: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations
         locations: [CLLocation]){
@@ -63,7 +63,7 @@ extension CDLocationManager: CLLocationManagerDelegate {
         if let currentLocation = locations.last {
             print(currentLocation)
             let dict: [String: Any] = ["latitude": currentLocation.coordinate.latitude, "longitude": currentLocation.coordinate.longitude]
-         self.rootRef.child("users/\(userId)/coords").setValue(dict)
+         self.rootRef.child("users/\(userId)").setValue(dict)
         } else {
             print("No locations yet")
         }

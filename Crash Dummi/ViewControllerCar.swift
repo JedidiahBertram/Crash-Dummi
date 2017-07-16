@@ -9,21 +9,50 @@
 import UIKit
 import CoreLocation
 import Mapbox
+import Firebase
+import FirebaseDatabase
 
 class ViewControllerCar: UIViewController, CLLocationManagerDelegate, MGLMapViewDelegate {
     @IBOutlet weak var mapView: MGLMapView!
     
-
+var timer = Timer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         CDLocationManager.shared.startLocationUpdates()
         
+        //print(userId)
+        
         mapView.delegate = self
+        
+        let ref = Database.database().reference().child("users")
+        
+        ref.observeSingleEvent(of: .childAdded, with: { (DataSnapshot) in
+            if  let userDict = DataSnapshot.value as? [String:Any] {
+                
+                //for value in userDict.values {
+                    
+                    let point = MGLPointAnnotation()
+                    point.coordinate = CLLocationCoordinate2D(latitude: userDict["latitude"]! as! CLLocationDegrees, longitude: userDict["longitude"]! as! CLLocationDegrees)
+                    
+                    self.mapView.addAnnotation(point)
+                    
+                    //print(userDict["latitude"]!)
+                //}
+//                for key in userDict.keys {
+//                print("\(key)")
+//
+//                }
+                
+            }
+            
+            
+        })
+        
         
         // Do any additional setup after loading the view.
   
-//        mapView.setCenterCoordinate(centerCoordinate: point.coordinate, zoomLevel: 14, animated: NO)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
