@@ -11,11 +11,11 @@ import CoreLocation
 import Mapbox
 import Firebase
 import FirebaseDatabase
+import Foundation
 
 class ViewControllerCar: UIViewController, CLLocationManagerDelegate, MGLMapViewDelegate {
     @IBOutlet weak var mapView: MGLMapView!
     
-var timer = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,35 +26,60 @@ var timer = Timer()
         
         mapView.delegate = self
         
-        let ref = Database.database().reference().child("users")
+        let ref = Database.database().reference()
         
-        ref.observeSingleEvent(of: .childAdded, with: { (DataSnapshot) in
-            if  let userDict = DataSnapshot.value as? [String:Any] {
-                
-                //for value in userDict.values {
-                    
-                    let point = MGLPointAnnotation()
-                    point.coordinate = CLLocationCoordinate2D(latitude: userDict["latitude"]! as! CLLocationDegrees, longitude: userDict["longitude"]! as! CLLocationDegrees)
-                    
-                    self.mapView.addAnnotation(point)
-                    
-                    //print(userDict["latitude"]!)
-                //}
-//                for key in userDict.keys {
-//                print("\(key)")
-//
-//                }
-                
-            }
+                ref.keepSynced(true)
+        
+                ref.observeSingleEvent(of: .childAdded, with: { (DataSnapshot) in
+                    if  let userDict = DataSnapshot.value as? [String:Any] {
+        
+                        for (key, _) in userDict {
+                            //print("\(key)")
+                            
+                            if key != ("\(userId)") {
+                              let otherUser = key
+                                
+                                let rootRef = Database.database().reference().child("users").child("\(otherUser)")
+                                
+                                rootRef.observe(DataEventType.value, with: { (DataSnapshot) in
+                                    let userDict = DataSnapshot.value as? [String : AnyObject] ?? [:]
+                                    
+                                    print(userDict)
+                                    
+                                    var annotationCount = 0
+                                    
+                                    let point = MGLPointAnnotation()
+                                    
+                                    if annotationCount <= 1 {
+                                    self.mapView.removeAnnotations([point])
+                                        annotationCount -= 1
+                                    }
+                                    annotationCount += 1
+                                    
+                                    
+                                    point.coordinate = CLLocationCoordinate2D(latitude: userDict["latitude"]! as! CLLocationDegrees, longitude: userDict["longitude"]! as! CLLocationDegrees)
+                                    self.mapView.addAnnotation(point)
             
-            
-        })
+                                })
+                            }
+                        }
+                        //for value in userDict.values {
         
         
-        // Do any additional setup after loading the view.
-  
+        
+                    }
+                    
+        
+                })
+
     }
     
+    
+    
+        
+    
+//
+        // Do any additional setup after loading the view.
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         CDLocationManager.shared.stopLocationUpdates()

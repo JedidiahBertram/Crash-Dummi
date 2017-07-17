@@ -61,11 +61,11 @@ extension CDLocationManager: CLLocationManagerDelegate {
         locations: [CLLocation]){
         // add logic here
         if let currentLocation = locations.last {
-            print(currentLocation)
+            //print(currentLocation)
             let dict: [String: Any] = ["latitude": currentLocation.coordinate.latitude, "longitude": currentLocation.coordinate.longitude]
          self.rootRef.child("users/\(userId)").setValue(dict)
         } else {
-            print("No locations yet")
+            //print("No locations yet")
         }
         
     }
