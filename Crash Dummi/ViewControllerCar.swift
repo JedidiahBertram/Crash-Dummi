@@ -82,17 +82,19 @@ class ViewControllerCar: UIViewController, CLLocationManagerDelegate, MGLMapView
                                         
                                         let proximityInMeters = myProxCoords.distance(from: cyclistProxCoords)
                                         
-                                        print(proximityInMeters)
+                                        //print(proximityInMeters)
                                         
                                         var alertCount = 0
                                         
-                                        if proximityInMeters < 100 && alertCount > 1{
+                                        if proximityInMeters < 100 && alertCount < 1{
                                             
                                             alertCount += 1
+                                            print(alertCount)
                                             
                                         } else if proximityInMeters > 100 && alertCount > 0{
                                             
                                             alertCount -= 1
+                                            print(alertCount)
                                         
                                         }
                                         
@@ -100,9 +102,9 @@ class ViewControllerCar: UIViewController, CLLocationManagerDelegate, MGLMapView
                                         
                                             let content = UNMutableNotificationContent()
                                             content.title = "Cyclist Alert!"
-                                            content.body = "A cyclist is nearby, stay alert!"
+                                            content.body = "A cyclist is nearby, stay alert!"   
                                             
-                                            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0.3, repeats: false)
+                                            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
                                             
                                             let request = UNNotificationRequest(identifier: "Cyclist Alert", content: content, trigger: trigger)
                                             
