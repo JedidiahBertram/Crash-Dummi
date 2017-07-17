@@ -12,6 +12,7 @@ import Mapbox
 import Firebase
 import FirebaseDatabase
 import UserNotifications
+import AudioToolbox
 
 class ViewControllerCar: UIViewController, CLLocationManagerDelegate, MGLMapViewDelegate {
     @IBOutlet weak var mapView: MGLMapView!
@@ -25,6 +26,7 @@ class ViewControllerCar: UIViewController, CLLocationManagerDelegate, MGLMapView
         //print(userId)
         
         mapView.delegate = self
+        let point = MGLPointAnnotation()
         
         let ref = Database.database().reference()
         
@@ -49,8 +51,10 @@ class ViewControllerCar: UIViewController, CLLocationManagerDelegate, MGLMapView
 //                         --->!!!THIS IS A ANNOTATION REMOVAL METHOD THAT DOES NOT WORK!!!<---
                                     
 //                                    var annotationCount = 0
-//                                    
-                                    let point = MGLPointAnnotation()
+                                    
+                                    self.mapView.removeAnnotation(point)
+
+//
 //
 //                                    annotationCount += 1
 //                                    
@@ -61,6 +65,8 @@ class ViewControllerCar: UIViewController, CLLocationManagerDelegate, MGLMapView
                                     
                                     point.coordinate = CLLocationCoordinate2D(latitude: cyclistLat! as! CLLocationDegrees, longitude: cyclistLon! as! CLLocationDegrees)
                                     self.mapView.addAnnotation(point)
+                                    print("this doesnt work?")
+                                    
                                     
                                     let proxRef = Database.database().reference().child("users").child("\(userId)")
                                     
@@ -78,23 +84,38 @@ class ViewControllerCar: UIViewController, CLLocationManagerDelegate, MGLMapView
                                         
                                         print(proximityInMeters)
                                         
-                                        if proximityInMeters < 100 {
+                                        var alertCount = 0
+                                        
+                                        if proximityInMeters < 100 && alertCount > 1{
                                             
+                                            alertCount += 1
+                                            
+                                        } else if proximityInMeters > 100 && alertCount > 0{
+                                            
+                                            alertCount -= 1
+                                        
+                                        }
+                                        
+                                        if alertCount > 0 {
+                                        
                                             let content = UNMutableNotificationContent()
                                             content.title = "Cyclist Alert!"
                                             content.body = "A cyclist is nearby, stay alert!"
                                             
-                                            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 7, repeats: false)
+                                            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0.3, repeats: false)
                                             
                                             let request = UNNotificationRequest(identifier: "Cyclist Alert", content: content, trigger: trigger)
                                             
                                             UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+                                            
+                                            AudioServicesPlaySystemSound(SystemSoundID(1320))
+                                            AudioServicesPlaySystemSound(SystemSoundID(4095))
                                         print("A cyclist is nearby! Keep Your Head Up")
                                         }
                                         
                                     })
                                     
-                                    
+
                                 })
                             }
                             
