@@ -11,7 +11,7 @@ import CoreLocation
 import Mapbox
 import Firebase
 import FirebaseDatabase
-import Foundation
+import UserNotifications
 
 class ViewControllerCar: UIViewController, CLLocationManagerDelegate, MGLMapViewDelegate {
     @IBOutlet weak var mapView: MGLMapView!
@@ -34,32 +34,35 @@ class ViewControllerCar: UIViewController, CLLocationManagerDelegate, MGLMapView
                     if  let userDict = DataSnapshot.value as? [String:Any] {
         
                         for (key, _) in userDict {
-                            //print("\(key)")
                             
                             if key != ("\(userId)") {
-                              let otherUser = key
+                              let cyclistId = key
                                 
-                                let rootRef = Database.database().reference().child("users").child("\(otherUser)")
+                                let rootRef = Database.database().reference().child("users").child("\(cyclistId)")
                                 
                                 rootRef.observe(DataEventType.value, with: { (DataSnapshot) in
-                                    let userDict = DataSnapshot.value as? [String : AnyObject] ?? [:]
+                                    let cyclistDict = DataSnapshot.value as? [String : AnyObject] ?? [:]
                                     
-                                    print(userDict)
+                                    //print(userDict)
+                                    let cyclistLat = cyclistDict["latitude"]
+                                    let cyclistLon = cyclistDict["longitude"]
+//                         --->!!!THIS IS A ANNOTATION REMOVAL METHOD THAT DOES NOT WORK!!!<---
                                     
-                                    var annotationCount = 0
-                                    
+//                                    var annotationCount = 0
+//                                    
                                     let point = MGLPointAnnotation()
+//
+//                                    annotationCount += 1
+//                                    
+//                                    if annotationCount > 0 {
+//                                        self.mapView.removeAnnotations([point])
+//                                        annotationCount -= 1
+//                                    }
                                     
-                                    if annotationCount <= 1 {
-                                    self.mapView.removeAnnotations([point])
-                                        annotationCount -= 1
-                                    }
-                                    annotationCount += 1
-                                    
-                                    
-                                    point.coordinate = CLLocationCoordinate2D(latitude: userDict["latitude"]! as! CLLocationDegrees, longitude: userDict["longitude"]! as! CLLocationDegrees)
+                                    point.coordinate = CLLocationCoordinate2D(latitude: cyclistLat! as! CLLocationDegrees, longitude: cyclistLon! as! CLLocationDegrees)
                                     self.mapView.addAnnotation(point)
-            
+                                    
+                                    
                                 })
                             }
                         }

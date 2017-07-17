@@ -30,7 +30,7 @@ class CDLocationManager: NSObject {
             //add logic here
         }
         
-        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+        locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
         locationManager.distanceFilter = 15
         locationManager.delegate = self
         
