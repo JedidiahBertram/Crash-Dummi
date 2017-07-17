@@ -62,9 +62,42 @@ class ViewControllerCar: UIViewController, CLLocationManagerDelegate, MGLMapView
                                     point.coordinate = CLLocationCoordinate2D(latitude: cyclistLat! as! CLLocationDegrees, longitude: cyclistLon! as! CLLocationDegrees)
                                     self.mapView.addAnnotation(point)
                                     
+                                    let proxRef = Database.database().reference().child("users").child("\(userId)")
+                                    
+                                    proxRef.observe(DataEventType.value, with: { (DataSnapshot) in
+                                    let myProxDict = DataSnapshot.value as? [String : AnyObject] ?? [:]
+                                        
+                                    let myProxLat = myProxDict["latitude"]
+                                    let myProxLon = myProxDict["longitude"]
+                                    
+                                        
+                                        let myProxCoords = CLLocation(latitude: myProxLat as! CLLocationDegrees, longitude: myProxLon as! CLLocationDegrees)
+                                        let cyclistProxCoords = CLLocation(latitude: cyclistLat as! CLLocationDegrees, longitude: cyclistLon as! CLLocationDegrees)
+                                        
+                                        let proximityInMeters = myProxCoords.distance(from: cyclistProxCoords)
+                                        
+                                        print(proximityInMeters)
+                                        
+                                        if proximityInMeters < 100 {
+                                            
+                                            let content = UNMutableNotificationContent()
+                                            content.title = "Cyclist Alert!"
+                                            content.body = "A cyclist is nearby, stay alert!"
+                                            
+                                            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 7, repeats: false)
+                                            
+                                            let request = UNNotificationRequest(identifier: "Cyclist Alert", content: content, trigger: trigger)
+                                            
+                                            UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+                                        print("A cyclist is nearby! Keep Your Head Up")
+                                        }
+                                        
+                                    })
+                                    
                                     
                                 })
                             }
+                            
                         }
                         //for value in userDict.values {
         
