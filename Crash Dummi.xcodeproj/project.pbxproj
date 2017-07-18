@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1250C0EB9F1D5D6CF22DCD19 /* Pods_Crash_DummiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F8DACE0FB6DE9E619F7885 /* Pods_Crash_DummiTests.framework */; };
 		8FA53E619A3CEDDF255DC5B2 /* Pods_Crash_Dummi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB4BB11834B58F277FC8D81 /* Pods_Crash_Dummi.framework */; };
+		C741FAE71F1DD79500F4258D /* cycleAnno.png in Resources */ = {isa = PBXBuildFile; fileRef = C741FAE61F1DD79500F4258D /* cycleAnno.png */; };
+		C741FAED1F1E6B4800F4258D /* tinycdIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = C741FAEC1F1E6B4800F4258D /* tinycdIcon2.png */; };
+		C741FAEF1F1E6CDB00F4258D /* cdIcon3.png in Resources */ = {isa = PBXBuildFile; fileRef = C741FAEE1F1E6CDB00F4258D /* cdIcon3.png */; };
 		C79F3A491F119EC300C1DEB8 /* ViewControllerBike.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F3A481F119EC300C1DEB8 /* ViewControllerBike.swift */; };
 		C79F3A4B1F119F0700C1DEB8 /* ViewControllerCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F3A4A1F119F0700C1DEB8 /* ViewControllerCar.swift */; };
 		C79F3A4D1F11AF9D00C1DEB8 /* locationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79F3A4C1F11AF9D00C1DEB8 /* locationManager.swift */; };
@@ -49,6 +52,9 @@
 		840CE33591D940ACD283C397 /* Pods_Crash_DummiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crash_DummiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CB4BB11834B58F277FC8D81 /* Pods_Crash_Dummi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crash_Dummi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C9E2963D144EDD3374954E /* Pods-Crash Dummi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crash Dummi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crash Dummi/Pods-Crash Dummi.release.xcconfig"; sourceTree = "<group>"; };
+		C741FAE61F1DD79500F4258D /* cycleAnno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cycleAnno.png; sourceTree = "<group>"; };
+		C741FAEC1F1E6B4800F4258D /* tinycdIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tinycdIcon2.png; sourceTree = "<group>"; };
+		C741FAEE1F1E6CDB00F4258D /* cdIcon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cdIcon3.png; sourceTree = "<group>"; };
 		C79F3A481F119EC300C1DEB8 /* ViewControllerBike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerBike.swift; sourceTree = "<group>"; };
 		C79F3A4A1F119F0700C1DEB8 /* ViewControllerCar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerCar.swift; sourceTree = "<group>"; };
 		C79F3A4C1F11AF9D00C1DEB8 /* locationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locationManager.swift; sourceTree = "<group>"; };
@@ -154,6 +160,9 @@
 				C7E2A98D1F1185AB00B1CCD5 /* Assets.xcassets */,
 				C7E2A98F1F1185AB00B1CCD5 /* LaunchScreen.storyboard */,
 				C7E2A9921F1185AB00B1CCD5 /* Info.plist */,
+				C741FAEE1F1E6CDB00F4258D /* cdIcon3.png */,
+				C741FAEC1F1E6B4800F4258D /* tinycdIcon2.png */,
+				C741FAE61F1DD79500F4258D /* cycleAnno.png */,
 				C79F3A4C1F11AF9D00C1DEB8 /* locationManager.swift */,
 			);
 			path = "Crash Dummi";
@@ -296,9 +305,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C741FAED1F1E6B4800F4258D /* tinycdIcon2.png in Resources */,
+				C741FAE71F1DD79500F4258D /* cycleAnno.png in Resources */,
 				C7E2A9911F1185AB00B1CCD5 /* LaunchScreen.storyboard in Resources */,
 				C7E4E4651F17F11F0016BF8A /* GoogleService-Info.plist in Resources */,
 				C7E2A98E1F1185AB00B1CCD5 /* Assets.xcassets in Resources */,
+				C741FAEF1F1E6CDB00F4258D /* cdIcon3.png in Resources */,
 				C7E2A98C1F1185AB00B1CCD5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

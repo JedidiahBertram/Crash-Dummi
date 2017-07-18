@@ -26,7 +26,10 @@ class ViewControllerCar: UIViewController, CLLocationManagerDelegate, MGLMapView
         //print(userId)
         
         mapView.delegate = self
-        let point = MGLPointAnnotation()
+        
+        let cyclist = MGLPointAnnotation()
+        
+        
         
         let ref = Database.database().reference()
         
@@ -45,27 +48,15 @@ class ViewControllerCar: UIViewController, CLLocationManagerDelegate, MGLMapView
                                 rootRef.observe(DataEventType.value, with: { (DataSnapshot) in
                                     let cyclistDict = DataSnapshot.value as? [String : AnyObject] ?? [:]
                                     
-                                    //print(userDict)
+
                                     let cyclistLat = cyclistDict["latitude"]
                                     let cyclistLon = cyclistDict["longitude"]
-//                         --->!!!THIS IS A ANNOTATION REMOVAL METHOD THAT DOES NOT WORK!!!<---
                                     
-//                                    var annotationCount = 0
-                                    
-                                    self.mapView.removeAnnotation(point)
+                                    self.mapView.removeAnnotation(cyclist)
 
-//
-//
-//                                    annotationCount += 1
-//                                    
-//                                    if annotationCount > 0 {
-//                                        self.mapView.removeAnnotations([point])
-//                                        annotationCount -= 1
-//                                    }
                                     
-                                    point.coordinate = CLLocationCoordinate2D(latitude: cyclistLat! as! CLLocationDegrees, longitude: cyclistLon! as! CLLocationDegrees)
-                                    self.mapView.addAnnotation(point)
-                                    print("this doesnt work?")
+                                    cyclist.coordinate = CLLocationCoordinate2D(latitude: cyclistLat! as! CLLocationDegrees, longitude: cyclistLon! as! CLLocationDegrees)
+                                    self.mapView.addAnnotation(cyclist)
                                     
                                     
                                     let proxRef = Database.database().reference().child("users").child("\(userId)")
@@ -91,14 +82,9 @@ class ViewControllerCar: UIViewController, CLLocationManagerDelegate, MGLMapView
                                             alertCount += 1
                                             print(alertCount)
                                             
-                                        } else if proximityInMeters > 100 && alertCount > 0{
-                                            
-                                            alertCount -= 1
-                                            print(alertCount)
-                                        
                                         }
                                         
-                                        if alertCount > 0 {
+                                        if alertCount == 1 {
                                         
                                             let content = UNMutableNotificationContent()
                                             content.title = "Cyclist Alert!"
