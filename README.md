@@ -39,3 +39,21 @@ Click the image to go to video
 [![IMAGE ALT TEXT](https://github.com/JedidiahBertram/Crash-Dummi/blob/master/Crash%20Dummi/Assets.xcassets/Screen%20Shot%202017-08-14%20at%204.22.34%20PM.png)](https://www.youtube.com/watch?v=3Y5uE0ezTGY "Crash Dummi Presentation Video")
 
 ## Readme GIF Walkthrough
+
+I wanted to make Crash Dummi as easy to use as possible, and not require a sign up. It is important that it is easily accessible so that as many people will feel inclined to use it as possible. So, I made the set up super easy. Below, is the set up for a cyclist. They simply open the app, and choose if they are cycling or driving. When cyclist is chosen, it goes to a map, assigns a unique id, and put them into the database.
+
+![alt text](https://github.com/JedidiahBertram/Crash-Dummi/blob/master/Crash%20Dummi/Assets.xcassets/CDcyclesetup.gif)
+
+Same thing for drivers. This gif also shows off the driver alerts that occur when drivers are not in the app, but have it running in the background. This allows the app to be effective if the user wants to use a navigation app, or do anything else on their phone. They will get the alert, which also makes the phone chime and vibrate uniquely.
+
+![alt text](https://github.com/JedidiahBertram/Crash-Dummi/blob/master/Crash%20Dummi/Assets.xcassets/CDdriversetupNotification.gif)
+
+The next gif shows off how the firebase database works. You will see the unique ID's given, and the live updating coordinates. The database will look much different once the project is totally complete in order to segement which users get updated etc. But for the two weeks this is how it works.
+
+![alt text](https://github.com/JedidiahBertram/Crash-Dummi/blob/master/Crash%20Dummi/Assets.xcassets/CDfirebase.gif)
+
+This final gif just shows off the live updating of a cyclists location on a drivers view. It works!
+
+![alt text](https://github.com/JedidiahBertram/Crash-Dummi/blob/master/Crash%20Dummi/Assets.xcassets/CDlivetracking.gif)
+
+This was a passion project for me, and I intend to continue my work on it.
