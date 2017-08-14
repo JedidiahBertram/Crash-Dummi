@@ -26,4 +26,8 @@ I knew nothing about any of these technologies before I started the project, and
 
 I studied my pants off, and started to code. It was slow going at first, but as I got more familiar with all of the tech, I started solving more problems every day, and feeling great about myself!
 
-The result is Crash Dummi as it works today. A functional app, that performs the aforementioned tasks exactly as it should! See the following gifs for more info.
+The result is Crash Dummi as it works today. A functional app, that performs the aforementioned tasks exactly as it should! See the following gifs for more info on how it works, or, watch the youtube videos linked to the images below.
+
+## Crash Dummi Real World Example (and comedic) Video
+
+[![IMAGE ALT TEXT](https://github.com/JedidiahBertram/Crash-Dummi/blob/master/Crash%20Dummi/Assets.xcassets/Screen%20Shot%202017-08-14%20at%204.21.57%20PM.png)](https://www.youtube.com/watch?v=w_fzr8GW8PM "Crash Dummi Example Video")
