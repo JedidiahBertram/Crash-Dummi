@@ -30,4 +30,4 @@ The result is Crash Dummi as it works today. A functional app, that performs the
 
 ## Crash Dummi Real World Example (and comedic) Video
 
-[![IMAGE ALT TEXT](https://github.com/JedidiahBertram/Crash-Dummi/blob/master/Crash%20Dummi/Assets.xcassets/Screen%20Shot%202017-08-14%20at%204.21.57%20PM.png)](https://www.youtube.com/watch?v=w_fzr8GW8PM "Crash Dummi Example Video")
+[![IMAGE ALT TEXT](https://github.com/JedidiahBertram/Crash-Dummi/blob/master/Crash%20Dummi/Assets.xcassets/Screen%20Shot%202017-08-14%20at%204.21.57%20PM.png | width=200px)](https://www.youtube.com/watch?v=w_fzr8GW8PM "Crash Dummi Example Video")
