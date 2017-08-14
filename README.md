@@ -1,14 +1,14 @@
 # Crash Dummi
-![alt text](https://github.com/JedidiahBertram/Crash-Dummi/edit/master/README.md)
+![alt text](https://github.com/JedidiahBertram/Crash-Dummi/blob/master/Crash%20Dummi/Assets.xcassets/cdreadmebanner.png)
 An iOS app built to keep cyclists and drivers safer.
 By Jedidiah Bertram
 
 ### Stack:
-*__Swift__
-*__Xcode__
-*__Cocoa Pods__
-*__FireBase__
-*__MapBox__
+* __Swift__
+* __Xcode__
+* __Cocoa Pods__
+* __FireBase__
+* __MapBox__
 
 ## The Story Behind the App...
 The idea for Crash Dummi was originally born when I got hit by a car.
