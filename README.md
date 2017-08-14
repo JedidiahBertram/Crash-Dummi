@@ -37,3 +37,5 @@ Click the image to go to video
 
 Click the image to go to video
 [![IMAGE ALT TEXT](https://github.com/JedidiahBertram/Crash-Dummi/blob/master/Crash%20Dummi/Assets.xcassets/Screen%20Shot%202017-08-14%20at%204.22.34%20PM.png)](https://www.youtube.com/watch?v=3Y5uE0ezTGY "Crash Dummi Presentation Video")
+
+## Readme GIF Walkthrough
